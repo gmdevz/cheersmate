@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Board from "./components/Board";
 import Drink from "./components/Drink";
 
@@ -13,6 +14,7 @@ function App() {
 					<Board setTheDrink={setIsDrink} />
 				)}
 			</div>
+			<Analytics />
 		</div>
 	);
 }
