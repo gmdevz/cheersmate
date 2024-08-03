@@ -17,7 +17,9 @@ function App() {
 				.map((nav) => nav.type)
 				.includes("reload");
 
-		if (pageAccessedByReload) {
+		const isFirstVisit = !localStorage.getItem("hasVisited");
+
+		if (pageAccessedByReload || isFirstVisit) {
 			Swal.fire({
 				title: "CheersMate",
 				text: "The fun web app that turns choosing your next beer into a game! Pick a random beer icon, and if you hit the special one, it's time to take a sip! Perfect for parties and casual hangouts, CheersMate makes every round exciting. Tap, cheer, and enjoy the fun with CheersMate!",
@@ -28,6 +30,8 @@ function App() {
 				allowOutsideClick: false,
 				confirmButtonText: "Cheers 🍻",
 			});
+
+			localStorage.setItem("hasVisited", "true");
 		}
 	}, []);
 
