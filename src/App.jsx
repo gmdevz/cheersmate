@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import { Analytics } from "@vercel/analytics/react";
 import Board from "./components/Board";
 import Drink from "./components/Drink";
+import beerMugImage from "./assets/beer-mug.png";
 
 function App() {
 	const [isDrink, setIsDrink] = useState();
@@ -20,10 +21,10 @@ function App() {
 			Swal.fire({
 				title: "CheersMate",
 				text: "The fun web app that turns choosing your next beer into a game! Pick a random beer icon, and if you hit the special one, it's time to take a sip! Perfect for parties and casual hangouts, CheersMate makes every round exciting. Tap, cheer, and enjoy the fun with CheersMate!",
-				imageUrl: "./src/assets/beer-mug.png",
+				imageUrl: beerMugImage,
 				imageWidth: 200,
 				imageHeight: 200,
-				imageAlt: "Custom image",
+				imageAlt: "Beer Mug",
 				allowOutsideClick: false,
 				confirmButtonText: "Cheers 🍻",
 			});
