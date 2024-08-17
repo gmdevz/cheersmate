@@ -23,4 +23,4 @@ For any questions or feedback, feel free to reach out:
 - 📧 Email: [gmmoose17@gmail.com](mailto:gmmoose17@gmail.com)
 - 🐦 Twitter: [@gmdevz](https://twitter.com/gmdevz)
 
-Cheers to good times and great beer with [CheersMate!] 🍻(https://cheersmate.vercel.app/)
+Cheers to good times and great beer with [CheersMate!](https://cheersmate.vercel.app/) 🍻
